@@ -1,0 +1,20 @@
+[app]
+title = Vzor
+package.name = vzor
+package.domain = org.example
+version = 1.0.0
+version.code = 1
+source.dir = .
+requirements = python3,flet,openpyxl,fpdf2
+orientation = portrait
+fullscreen = 0
+android.minapi = 21
+android.api = 30
+android.ndk = 23b
+android.accept_sdk_license = True
+android.permissions = INTERNET, WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE
+android.archs = arm64-v8a
+entrypoint = main.py
+android.entrypoint = main.py
+android.activity = MainActivity
+android.apptheme = @android:style/Theme.Material.Light
