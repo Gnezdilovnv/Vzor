@@ -536,9 +536,9 @@ def main(page: ft.Page):
             page.update()
 
         page.on_route_change = route_change
-        log_error("Calling page.go('/')")
-        page.go("/")
-        log_error("page.go('/') completed")
+        log_error("Calling route_change initially")
+        route_change(page.route)   # <-- ИСПРАВЛЕНИЕ: явно строим начальную страницу
+        log_error("initial route_change completed")
 
     except Exception as e:
         log_error(f"!!! MAIN EXCEPTION: {traceback.format_exc()}")
