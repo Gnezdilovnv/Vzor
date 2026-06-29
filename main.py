@@ -253,7 +253,7 @@ def main(page: ft.Page):
                     )
                 if len(all_recs) > off+PAGE_SIZE:
                     rec_list.controls.append(
-                        ft.ElevatedButton("Load more", on_click=lambda e: load_page(offset=PAGE_SIZE, False))
+                        ft.ElevatedButton("Load more", on_click=lambda e: load_page(offset=PAGE_SIZE, clear=False))
                     )
                 page.update()
 
